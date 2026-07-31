@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>々</title>
+  <link rel="icon" href="icon.png">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #5c564f;
+      font-family: "游明朝", "Yu Mincho", "YuMincho", serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      padding: 0 clamp(28px, 8vw, 120px);
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: clamp(72px, 18vh, 160px);
+      padding-bottom: clamp(48px, 12vh, 120px);
+    }
+
+    .name {
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      margin-bottom: 6px;
+    }
+
+    .tagline {
+      font-size: 16px;
+      letter-spacing: 0.15em;
+      opacity: 0.62;
+      margin-bottom: clamp(40px, 7vw, 56px);
+    }
+
+    /* ─── Bio ────────────────────────────────────── */
+
+    .bio {
+      font-size: 16px;
+      letter-spacing: 0.08em;
+      line-height: 2.2;
+      opacity: 0.72;
+      max-width: 480px;
+      margin-bottom: clamp(56px, 10vw, 80px);
+    }
+
+    @media (max-width: 600px) {
+      .bio br {
+        display: none;
+      }
+    }
+
+    /* ─── Links ──────────────────────────────────── */
+
+    .links {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .link {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      align-items: baseline;
+      padding: 20px 0;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    @media (max-width: 600px) {
+      .link {
+        grid-template-columns: 1fr;
+        gap: 4px;
+        padding: 18px 0;
+      }
+    }
+
+    .link-name {
+      font-size: 16px;
+      letter-spacing: 0.12em;
+    }
+
+    .link-handle {
+      font-size: 16px;
+      letter-spacing: 0.06em;
+      opacity: 0.55;
+    }
+
+    /* ─── Footer ─────────────────────────────────── */
+
+    .foot {
+      padding-bottom: clamp(32px, 6vw, 48px);
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      opacity: 0.35;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <main class="main">
+      <p class="name">々</p>
+      <p class="tagline">音楽 / イラスト / 文筆 / ゲーム開発</p>
+
+      <p class="bio">
+        各種SNSをまとめたホームページ。<br>
+        SNSでは主に創作物を置いています。
+      </p>
+
+      <nav class="links">
+
+        <a class="link" href="https://x.com/fe0000a" target="_blank" rel="noopener">
+          <span class="link-name">X（Twitter）</span>
+          <span class="link-handle">https://x.com/fe0000a</span>
+        </a>
+
+        <a class="link" href="https://youtube.com/@fe0000a" target="_blank" rel="noopener">
+          <span class="link-name">YouTube</span>
+          <span class="link-handle">https://youtube.com/@fe0000a</span>
+        </a>
+
+        <a class="link" href="https://note.com/fe0000a" target="_blank" rel="noopener">
+          <span class="link-name">Note</span>
+          <span class="link-handle">https://note.com/fe0000a</span>
+        </a>
+
+        <a class="link" href="https://github.com/fe0000a" target="_blank" rel="noopener">
+          <span class="link-name">Git Hub</span>
+          <span class="link-handle">https://github.com/fe0000a</span>
+        </a>
+
+      </nav>
+    </main>
+
+  </div>
+</body>
+</html>
